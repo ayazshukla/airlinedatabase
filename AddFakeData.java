@@ -52,7 +52,7 @@ public class AddFakeData {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {//AYAZ
+    public static void main(String[] args) {//UTKARSH
         AddFakeData app = new AddFakeData();
 
         String FlightNo[]={"AC01","AC02","AC03","AC04","AC05"};
