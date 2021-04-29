@@ -19,7 +19,7 @@ class SQL
         return conn;
     }
 
-    public void insert(String PNR,String FlightNo,String FirstName,String LastName,String SeatNo) {//ROMAISA
+    public void insert(String PNR,String FlightNo,String FirstName,String LastName,String SeatNo) {//UTKARSH
         String sql = "INSERT INTO passenger(PNR,FlightNo,FirstName,LastName,SeatNo) VALUES(?,?,?,?,?)";
 
         try (Connection conn = this.connect();
@@ -115,7 +115,7 @@ class SQL
         }
     }
 
-    public void BookTicket(String PNR,String FlightNo,String FirstName,String LastName,String SeatNo){//ROMAISA
+    public void BookTicket(String PNR,String FlightNo,String FirstName,String LastName,String SeatNo){//UTKARSH
         String sql = "INSERT INTO passenger(PNR,FlightNo,FirstName,LastName,SeatNo) VALUES(?,?,?,?,?)";
 
         try (Connection conn = this.connect();
@@ -142,7 +142,7 @@ class SQL
         }
     }
 
-    public void CheckAvailableDestinations(){//AYAZ
+    public void CheckAvailableDestinations(){//UTKARSH
         String sql= "SELECT FlightNo,Destination FROM aircrafts";
         try (Connection conn = this.connect();
         Statement stmt  = conn.createStatement();
