@@ -30,7 +30,7 @@ public class DeleteData {
      *
      * @param id
      */
-    public void delete(String s) {//ROMAISA
+    public void delete(String s) {//AYAZ
         String sql = "DELETE FROM passenger WHERE PNR = ?";
  
         try (Connection conn = this.connect();
