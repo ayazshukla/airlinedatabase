@@ -57,7 +57,7 @@ class SQL
 
     }
 
-    public String assignPNR() {//ROMAISA
+    public String assignPNR() {//UTKARSH
         String PNRNumbers = null;
         String PNRBooked = null;
         String rowCounter = "SELECT COUNT(*) FROM passenger";
@@ -95,7 +95,7 @@ class SQL
         return PNRBooked;     
     }
 
-    public void PrintBoardingPass(String s){//AYAZ
+    public void PrintBoardingPass(String s){//TOGETHER
         String sql = "SELECT passenger.FirstName,passenger.LastName,passenger.SeatNo,aircrafts.Destination,aircrafts.DepartTime,aircrafts.ArriveTime FROM aircrafts,passenger WHERE passenger.PNR='"+s+"' AND aircrafts.FlightNo=passenger.FlightNo ";
         try (Connection conn = this.connect();
         Statement stmt  = conn.createStatement();
