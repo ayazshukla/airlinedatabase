@@ -222,7 +222,7 @@ class SQL
                 break;
 
                 case "5":
-                System.out.println("EXITED");
+                System.out.println("TERMINATED");
                 break;
             }
         }
